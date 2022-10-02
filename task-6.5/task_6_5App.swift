@@ -4,14 +4,16 @@
 //
 //  Created by Mirzabek on 23/09/22.
 //
-
 import SwiftUI
 
 @main
-struct task_6_5App: App {
+struct TaskCoreDataApp: App {
+    let persistenceController = PersistenceController.shared
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

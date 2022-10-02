@@ -14,6 +14,10 @@
 		967F3B0828DDD1EC002F9CB9 /* task_6_5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F3B0728DDD1EC002F9CB9 /* task_6_5Tests.swift */; };
 		967F3B1228DDD1EC002F9CB9 /* task_6_5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F3B1128DDD1EC002F9CB9 /* task_6_5UITests.swift */; };
 		967F3B1428DDD1ED002F9CB9 /* task_6_5UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F3B1328DDD1ED002F9CB9 /* task_6_5UITestsLaunchTests.swift */; };
+		967F3B2228DDD23E002F9CB9 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F3B2128DDD23E002F9CB9 /* Details.swift */; };
+		967F3B2528DDD255002F9CB9 /* coreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 967F3B2328DDD255002F9CB9 /* coreData.xcdatamodeld */; };
+		967F3B2828DDD2BE002F9CB9 /* StudentCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967F3B2728DDD2BE002F9CB9 /* StudentCells.swift */; };
+		9681CEDB28DDED73004AA464 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9681CEDA28DDED73004AA464 /* Persistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		967F3B0D28DDD1EC002F9CB9 /* task-6.5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "task-6.5UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		967F3B1128DDD1EC002F9CB9 /* task_6_5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task_6_5UITests.swift; sourceTree = "<group>"; };
 		967F3B1328DDD1ED002F9CB9 /* task_6_5UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task_6_5UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		967F3B2128DDD23E002F9CB9 /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		967F3B2428DDD255002F9CB9 /* coreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coreData.xcdatamodel; sourceTree = "<group>"; };
+		967F3B2728DDD2BE002F9CB9 /* StudentCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCells.swift; sourceTree = "<group>"; };
+		9681CEDA28DDED73004AA464 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,8 @@
 		967F3AEA28DDD1E9002F9CB9 = {
 			isa = PBXGroup;
 			children = (
+				967F3B2628DDD2AB002F9CB9 /* cells */,
+				967F3B2028DDD228002F9CB9 /* Screens */,
 				967F3AF528DDD1E9002F9CB9 /* task-6.5 */,
 				967F3B0628DDD1EC002F9CB9 /* task-6.5Tests */,
 				967F3B1028DDD1EC002F9CB9 /* task-6.5UITests */,
@@ -95,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				967F3AF628DDD1E9002F9CB9 /* task_6_5App.swift */,
-				967F3AF828DDD1E9002F9CB9 /* ContentView.swift */,
 				967F3AFA28DDD1EC002F9CB9 /* Assets.xcassets */,
 				967F3AFC28DDD1EC002F9CB9 /* Preview Content */,
 			);
@@ -125,6 +134,25 @@
 				967F3B1328DDD1ED002F9CB9 /* task_6_5UITestsLaunchTests.swift */,
 			);
 			path = "task-6.5UITests";
+			sourceTree = "<group>";
+		};
+		967F3B2028DDD228002F9CB9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				967F3B2128DDD23E002F9CB9 /* Details.swift */,
+				967F3AF828DDD1E9002F9CB9 /* ContentView.swift */,
+				967F3B2328DDD255002F9CB9 /* coreData.xcdatamodeld */,
+				9681CEDA28DDED73004AA464 /* Persistence.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		967F3B2628DDD2AB002F9CB9 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				967F3B2728DDD2BE002F9CB9 /* StudentCells.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967F3B2828DDD2BE002F9CB9 /* StudentCells.swift in Sources */,
+				9681CEDB28DDED73004AA464 /* Persistence.swift in Sources */,
+				967F3B2528DDD255002F9CB9 /* coreData.xcdatamodeld in Sources */,
 				967F3AF928DDD1E9002F9CB9 /* ContentView.swift in Sources */,
 				967F3AF728DDD1E9002F9CB9 /* task_6_5App.swift in Sources */,
+				967F3B2228DDD23E002F9CB9 /* Details.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +609,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		967F3B2328DDD255002F9CB9 /* coreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				967F3B2428DDD255002F9CB9 /* coreData.xcdatamodel */,
+			);
+			currentVersion = 967F3B2428DDD255002F9CB9 /* coreData.xcdatamodel */;
+			path = coreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 967F3AEB28DDD1E9002F9CB9 /* Project object */;
 }
